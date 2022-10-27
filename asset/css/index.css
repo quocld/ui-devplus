@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+    max-height: auto;
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+.menu-header-section{
+    --menu-header-width: 1270px;
+    max-width: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.menu-header-area{
+    width: 100%;
+    height: 120px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    
+}
+
+/* sticky */
+
+div.sticky{
+    position: fixed;
+    transition: padding 1s;
+    box-shadow: 0px 0px 2px #333333;
+    height: 90px;
+ 
+    }
+
+div.sticky-2{
+    transform: translateY(0px);
+}
+    
+    /* sticky */
+
+.menu-header-container{
+    background-color: #ffff;
+    width: var(--menu-header-width);
+    margin: 0 -15px;
+    align-items: center;
+    color: #111111;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+
+}
+
+.menu-sidebox{
+    padding: 15px;
+    height: 100%;
+    width: calc(var(--menu-header-width)/6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.logo-img{
+    max-width: 100%;
+    transform: translateY(1px);
+
+}
+
+.area-main-menu{
+    flex: 1;
+    padding: 0 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-menu{
+    font-weight: 600;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-menu-item{
+    list-style: none;
+    padding-right: 18px;
+    position: relative;
+    margin-right: 40px;
+    
+}
+
+.had-affter{
+    position: relative;
+}
+.had-affter::after {
+        content: "+";
+        position: absolute;
+        margin-left: 9px;
+      
+}
+
+.home-btn{
+    color: #226fb7;
+}
+
+.main-menu-item:hover{
+    
+    color: #226fb7;
+    transition: all 0.3s ease;
+}
+
+.expand-menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.expand-menu-item{
+    cursor: pointer;
+}
+
+.expand-menu-item:hover .expand-menu-item-line{
+    background-color: #226fb7;
+    transition: all 0.3s ease;
+    
+}
+
+.expand-menu-item-line{
+    width: 30px;
+    margin: 6px 0;
+    background-color: #111111;
+    height: 2px;
+    display: block;
+
+}
+
+
+/* dropdown-menu */
+
+.sub-menu-our-programme{
+    box-shadow: rgb(167, 166, 166) 0px 0px 10px;
+    background-color: #ffff;
+    display: none;
+    position: absolute;
+    top: 71px;;
+    padding: 15px;
+    width: 300px; 
+}
+
+.had-dropdown:hover .sub-menu-our-programme{
+    display: block;
+}
+    
+
+
+
+.sub-menu-our-programme-btn{
+    
+    width: 100%;  
+    margin-right: 40px;
+    height: 46px;
+    display: flex;
+   
+    align-items: center;
+}
+
+.sub-menu-our-programme-btn-cont{
+    padding: 30px;
+    text-decoration: none;
+    color: #111111;
+    font-weight: 300;
+}
+
+
+.main-body{
+    display: block;
+    background-image: url(https://devplus.edu.vn/assets/images/devplus/Devplus_missions.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 125px 0 425px;
+}
+
+
+

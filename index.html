@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Rubik:wght@300;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu-header-section">
+        <div id="navbar" class="menu-header-area">
+            <div class="menu-header-container"> 
+                <div class="menu-sidebox">
+                    <div class="logo-container">
+                        <img class="logo-img" src="https://devplus.edu.vn/assets/images/devplus/Artboard_2.png" alt="logo-img">
+                    </div>
+                </div>
+                <div id="menu" class="area-main-menu">
+                    <div class="main-menu">
+                   
+                        <div class="main-menu-item home-btn"> 
+                            <a class="main-menu-content">HOME</a>
+                        </div>
+                        <div class="main-menu-item"> 
+                            <a class="main-menu-content">ABOUT DEVPLUS</a>
+                        </div>
+                        <div class="main-menu-item had-dropdown"> 
+                            <a class="main-menu-content had-affter">OUR PROGRAMME</a>
+                            <div class="sub-menu-our-programme">
+                                <div class="sub-menu-our-programme-btn"><a class="sub-menu-our-programme-btn-cont" href="one-plus-campus/">One plus campus</a> </div>
+                                <div class="sub-menu-our-programme-btn"><a class="sub-menu-our-programme-btn-cont" href="two-plus-campus/">Two plus campus</a> </div>
+                                <div class="sub-menu-our-programme-btn"><a class="sub-menu-our-programme-btn-cont">Three plus campus</a> </div>
+                            </div>
+                        </div>
+                        <div class="main-menu-item"> 
+                            <a class="main-menu-content">DEVPLUS ACTIVITIES</a>
+                        </div>
+                 
+                    
+                </div>
+                    
+                </div>
+                
+                <div class="menu-sidebox">
+                    <div class="expand-menu">
+                        <div class="expand-menu-item">
+                            <span class="expand-menu-item-line"></span>
+                            <span class="expand-menu-item-line"></span>
+                            <span class="expand-menu-item-line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="main-body">
+        
+    </div>
+
+    <div class="footer">
+        <img src="https://devplus.edu.vn/assets/images/devplus/Devplus_missions.png" alt="">
+        
+    </div>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop ){
+                navbar.classList.add("sticky");
+            }else{
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
