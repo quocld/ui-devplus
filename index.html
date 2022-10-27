@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Rubik:wght@300;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="main-body">
     <div class="menu-header-section">
         <div id="navbar" class="menu-header-area">
             <div class="menu-header-container"> 
@@ -61,18 +61,39 @@
     </div>
 
     <div class="footer">
-        <img src="https://devplus.edu.vn/assets/images/devplus/Devplus_missions.png" alt="">
         
     </div>
 
+    <button onclick="scollUpFunc()"  id="scroll-up-btn-id" class="scroll-up-btn">
+       <div class="scroll-up-icon">
+            <ion-icon name="chevron-up-outline"></ion-icon>
+       </div>
+    </button>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script>
+        var body = document.getElementById("main-body");
         var navbar = document.getElementById("navbar");
         var menu = document.getElementById("menu");
+        var scrollUp = document.getElementById("scroll-up-btn-id");
+
+        function scollUpFunc(){
+            window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+            });
+        }
+
         window.onscroll = function(){
             if(window.pageYOffset >= menu.offsetTop ){
                 navbar.classList.add("sticky");
+                scrollUp.classList.add("scroll-up-active");
             }else{
                 navbar.classList.remove("sticky");
+                scrollUp.classList.remove("scroll-up-active");
             }
         }
 

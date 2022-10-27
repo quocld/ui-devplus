@@ -193,7 +193,11 @@ div.sticky{
 .had-dropdown:hover .sub-menu-our-programme{
     display: block;
 }
+.had-dropdown:hover .had-affter::after{
+    content: "-";
+}
     
+
 
 
 
@@ -224,5 +228,55 @@ div.sticky{
     padding: 125px 0 425px;
 }
 
+.footer{
+    height: 2000px;
+    width: 100%; 
+    background: #ffff; 
+
+    
+    
+}
+
+
+/* button scroll up */
+.scroll-up-btn{
+    border: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    text-align: center;
+    bottom: 40px;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    z-index: 999;
+    border-radius: 50%;
+}
+
+.scroll-up-icon{
+    background: #226FB7;
+    border-radius: 50%;
+    height: 40px;
+    font-size: 24px;
+    width: 42px;
+    color: #fff;
+    box-shadow: 0px 0px 2px rgb(0 0 0 / 40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    
+}
+
+.scroll-up-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+/* button scroll up */
 
 
