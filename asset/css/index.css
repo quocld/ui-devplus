@@ -60,11 +60,17 @@ div.sticky{
     transition: padding 1s;
     box-shadow: 0px 0px 2px #333333;
     height: 90px;
- 
+    animation:slide-down 0.7s;
     }
-
-div.sticky-2{
-    transform: translateY(0px);
+@keyframes slide-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        } 
+        100% {
+            opacity: 0.9;
+            transform: translateY(0);
+        } 
 }
     
     /* sticky */
