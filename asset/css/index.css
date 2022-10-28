@@ -39,6 +39,7 @@ h6 {
 
 .menu-header-section{
     --menu-header-width: 1270px;
+    --sidebox-width: calc(var(--menu-header-width)/6) ;
     max-width: 100%;
     font-family: 'Rubik', sans-serif;
 }
@@ -89,9 +90,10 @@ div.sticky{
 }
 
 .menu-sidebox{
+    position: relative;
     padding: 15px;
     height: 100%;
-    width: calc(var(--menu-header-width)/6);
+    width: var(--sidebox-width);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,6 +107,11 @@ div.sticky{
 
 }
 
+.menu-mobile{
+    flex: 1;
+    display: none;
+    }
+
 .area-main-menu{
     flex: 1;
     padding: 0 15px;
@@ -114,8 +121,8 @@ div.sticky{
 }
 
 .main-menu{
-    font-weight: 600;
     flex: 1;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,6 +195,7 @@ div.sticky{
     top: 71px;;
     padding: 15px;
     width: 300px; 
+    
 }
 
 .had-dropdown:hover .sub-menu-our-programme{
@@ -278,5 +286,99 @@ div.sticky{
 
 
 /* button scroll up */
+@media (max-width: 1400px){
+   
+
+    .menu-header-section{
+        --menu-header-width: 1140px;
+        --sidebox-width: 190px ;
+    }
+}
+
+@media (max-width: 1200px){
+   
+
+    .menu-header-section{
+        --menu-header-width: 960px;
+        --sidebox-width: 159.99px ;
+        font-size: 14px;
+    }
+    .area-main-menu {
+        font-size: 14px;
+        padding: 0 14px 0 22px;
+    }
 
 
+    .main-menu-item {
+
+        padding-right: 18px;
+ 
+        margin-right: 27px;
+    }
+
+
+
+
+
+}
+
+@media (max-width: 990px){
+   
+
+    .menu-header-section{
+        --menu-header-width: 690px;
+        --sidebox-width: 209.7px ;
+    }
+
+    .menu-sidebox{
+        width: var(--sidebox-width);
+        padding: 0;
+    }
+    .menu-side-right{
+        width: 20px;
+    }
+
+    .area-main-menu {
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+    }
+    .expand-menu-item-line {
+        width: 18.86px;
+        margin: 3px 0;
+        height: calc(10px/3);
+        border-radius: 1px;
+    }
+    div.sticky{
+        position: relative;
+    }
+    
+}
+
+
+@media (max-width: 768px){
+   
+
+    .menu-header-section{
+        --menu-header-width: 510px;
+        --sidebox-width: 209.7px ;
+    }
+    
+
+
+}
+
+@media (max-width: 550px){
+   
+
+    .menu-header-section{
+        --menu-header-width: 100%;
+        --sidebox-width: 209.7px ;
+    }
+    .menu-header-container {
+        padding: 15px;
+    }
+
+}

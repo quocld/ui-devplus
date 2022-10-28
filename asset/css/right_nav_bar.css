@@ -1,0 +1,13 @@
+.right-nav-container{
+    position: fixed;
+    background: lightblue;
+    padding: 30px 50px;
+    width: 500px;
+    height: 700px;
+    z-index: 999;
+    text-align: center;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
